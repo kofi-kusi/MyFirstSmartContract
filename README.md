@@ -1,6 +1,6 @@
 # Pushing Your First Smart Contract to GitHub from Remix IDE (GUI)
 
-This guide explains how a beginner used the Remix IDE's built-in GitHub integration to push their first smart contract to GitHub from the `MyFirstSmartContract` workspace, using a token generated on GitHub.
+This guide explains how a beginner pushed their first smart contract to GitHub from the `MyFirstSmartContract` workspace in Remix IDE, using a token for GitHub authentication and the Git tab in Remix.
 
 ## Prerequisites
 Before you begin, ensure you have:
@@ -17,7 +17,7 @@ Before you begin, ensure you have:
 ## Step 2: Write Your Smart Contract
 
 1. Inside your new workspace, click the **New File** button and name the file `SimpleStorage.sol`.
-2. Add the following smart contract code to `SimpleStorage.sol`.
+2. Add your smart contract code to `SimpleStorage.sol`.
 3. Compile the contract by clicking the **Solidity Compiler** tab on the left, then click the **Compile** button.
 
 ## Step 3: Generate a Personal Access Token on GitHub
@@ -31,10 +31,10 @@ Before you begin, ensure you have:
 
 ## Step 4: Connect Your GitHub Account in Remix
 
-1. In the Remix IDE, go to the **File Explorer**.
-2. Right-click on the file `SimpleStorage.sol` and select **Share** > **GitHub**.
-3. In the dialog box, paste the **Personal Access Token** you generated on GitHub when prompted for authentication.
-4. You will now be connected to your GitHub account.
+1. In Remix IDE, click the **Settings** tab (gear icon) on the left-hand side.
+2. Scroll down to the **GitHub Access Token** section.
+3. Paste the **Personal Access Token** generated from GitHub and click **Save**.
+4. Your GitHub account is now connected to Remix.
 
 ## Step 5: Set Up a GitHub Repository
 
@@ -43,16 +43,13 @@ Before you begin, ensure you have:
     - Name your repository (e.g., `first-smart-contract`), and choose whether to make it public or private.
     - Click **Create repository**.
 
-## Step 6: Push Your Smart Contract to GitHub Using Remix IDE
+## Step 6: Push Your Smart Contract to GitHub Using the Git Tab
 
-1. In Remix IDE, go to the **File Explorer** tab.
-2. Right-click on the `SimpleStorage.sol` file and select **Share** > **GitHub**.
-3. In the **Push to GitHub** dialog that appears:
-    - **Repository URL**: Paste the URL of your GitHub repository.
-    - **Branch**: Choose the branch to push to (typically `main` or `master`).
-    - **Commit Message**: Type a descriptive message such as `"Add SimpleStorage smart contract"`.
-    
-4. Click **Push** to upload the file to your GitHub repository.
+1. In Remix IDE, open the **Git** tab on the right-hand side of the IDE.
+2. In the Git settings, enter the URL of your GitHub repository (e.g., `https://github.com/your-username/first-smart-contract.git`).
+3. Stage the `SimpleStorage.sol` file by selecting it under the **Files** section.
+4. Write a descriptive commit message, such as `"Add SimpleStorage smart contract"`, and click **Commit**.
+5. Once committed, click the **Push** button to upload the changes to GitHub.
 
 ## Step 7: Verify Your Smart Contract on GitHub
 
@@ -61,7 +58,7 @@ Before you begin, ensure you have:
 
 ## Conclusion
 
-You have successfully written a smart contract in Remix IDE, connected your GitHub account using a Personal Access Token, and pushed the contract to your GitHub repository using the GUI.
+You have successfully written a smart contract in Remix IDE, connected your GitHub account using a Personal Access Token, and pushed the contract to your GitHub repository using the Git tab in Remix.
 
 ### Additional Resources
 - [Remix IDE Documentation](https://remix-ide.readthedocs.io/en/latest/)

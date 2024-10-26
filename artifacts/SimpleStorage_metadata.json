@@ -7,15 +7,73 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
+				"name": "activateContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_number",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "addFavoriteNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "callInternalFunction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deactivateContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalFunction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -45,6 +103,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -131,6 +202,19 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testExternalFunction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -161,11 +245,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0xa73295d047b103075215a5fd97c9509bc035ffad65de3e502a073bf0b2fdb8dc",
+			"keccak256": "0xa5c3d48d3f43e9607f7220e15e060b9718c6ab5f5e9f761cdf2431a3fe50f59e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cd83a510f567d2efb7a9f52e6efcdefdb7c7a09b514a05b458620c4acf1107ad",
-				"dweb:/ipfs/QmUXKrT4gHJahgkV7Q1ZwmHdRxT4g8prxGoaWLt3VVtLnV"
+				"bzz-raw://d79e441872258fd305cb1a5ac054bef09ad67df09938cebbddb60915aa791735",
+				"dweb:/ipfs/QmR87mec5HMLn9jct864XzcWJPWXU2PN8PPZjYhqvt47AP"
 			]
 		}
 	},

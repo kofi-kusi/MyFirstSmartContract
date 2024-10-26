@@ -60,5 +60,25 @@ contract SimpleStorage {
     function testExternalFunction() public view returns (string memory) {
         return this.externalFunction();
     }
+
+    function addFavoriteNumber(uint256 _number) public {
+        favoriteNumbers.push(_number);
+    }
+
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        people.push(Person(_name, _favoriteNumber));
+    }
+
+    function activateContract() public {
+        state = ContractState.Active;
+    }
+
+    function deactivateContract() public {
+        state = ContractState.Inactive;
+    }
+
+    function isActive() public view returns (bool) {
+        return state == ContractState.Active;
+    }
 }
 

@@ -56,9 +56,17 @@ Before you begin, ensure you have:
 1. Visit your GitHub repository page.
 2. You should see the `SimpleStorage.sol` file along with the commit message.
 
-### Modifications
+## Modifications
 Implemented `arrays`, `structs`, and `enum` data structres.
-
+### Mapping
+- Learnt how to use `mapping` keyword to estabhlish a relattionship between a key and value pair.
+### Events and Logging
+- Implemented an `event` which is a way for a smart contract to communicate that something important occured.
+- SYNTAX: `event EventName(parameters) visibility { // code block }`.
+### Storage locations
+- `storage`: location for state variables to be stored permanently.
+- `calldata`: immutable temporary storage location.
+- `memory`: mutable temporary location.
 ## Conclusion
 
 You have successfully written a smart contract in Remix IDE, connected your GitHub account using a Personal Access Token, and pushed the contract to your GitHub repository using the Git tab in Remix.

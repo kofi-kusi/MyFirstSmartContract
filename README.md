@@ -56,6 +56,9 @@ Before you begin, ensure you have:
 1. Visit your GitHub repository page.
 2. You should see the `SimpleStorage.sol` file along with the commit message.
 
+### Modifications
+Implemented `arrays`, `structs`, and `enum` data structres.
+
 ## Conclusion
 
 You have successfully written a smart contract in Remix IDE, connected your GitHub account using a Personal Access Token, and pushed the contract to your GitHub repository using the Git tab in Remix.
